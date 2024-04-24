@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HighlightDirective } from './highlight.directive';
+import { HighlightColorDirective } from './highlight-color.directive';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HighlightDirective,
+    HighlightColorDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
